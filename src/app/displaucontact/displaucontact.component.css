@@ -1,0 +1,65 @@
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.498); */
+    top:0px;
+}
+.board{
+    position: absolute;
+    /* margin-top: -20px; */
+    background-color:white;
+    width: 0%;
+    height: 0%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 200ms linear 1 forwards;
+}
+.scroll{
+    overflow-y:scroll ;
+    height: 83%;
+}
+.scroll::-webkit-scrollbar{
+    width: 5px;
+    background-color: grey;
+}
+@keyframes animate{
+    100%{
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        /* margin-top: 0px; */
+    }
+}
+.inner{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.498);
+    background-color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.boarddown{
+    margin: auto;
+    margin-top: -25px;
+    width: 100%;
+    height: 100%;
+    animation: animate2 300ms linear 1 forwards;
+    background-color: white;
+}
+
+
+td{
+    width: 200px;
+    text-align: center;
+
+}
+
+@keyframes animate2{
+    100%{
+        margin-top:0px;
+    }
+}

@@ -1,0 +1,7 @@
+input{
+    outline: none;
+    padding-left: 10px;
+}
+.scroll{
+    overflow-y: scroll;
+}
